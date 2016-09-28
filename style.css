@@ -87,13 +87,41 @@ li.inactive a:hover {
   font-family: "Cardo", serif;
 }
 
-.project-image {
+.project-image:hover img, .project-image:hover .caption {
+  cursor: pointer;
+  opacity: .25;
   transition: opacity 0.2s ease-in-out;
 }
 
-.project-image:hover {
-  cursor: pointer;
-  opacity: 0.3;
+.project-image:hover:after {
+  top: 20%;
+  opacity: 1;
+  color: #ffffff;
+  background: #AF6204;
+  border: 3px solid #ffffff;
+}
+
+.project-image:after {
+  font-family: "FontAwesome";
+  content: "\f121";
+  color: #fff;
+  font-size: 48px;
+  line-height: 80px;
+  top: 70%;
+  position: absolute;
+  text-align: center;
+  display: inline-block;
+  transition: all .35s;
+  opacity: 0;
+  width: 86px;
+  height: 86px;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  border-radius: 50%;
+  background: transparent;
+  border: 3px solid transparent;
 }
 
 .stay-connected {
