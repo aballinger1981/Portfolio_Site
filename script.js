@@ -5,7 +5,7 @@ $(document).ready(function() {
       $(".btn-responsive").addClass("btn-lg");
     }*/
   resizeSection();
-  
+
   window.onresize = function(event) {
     resizeSection();
     //center();
@@ -23,7 +23,7 @@ $(document).ready(function() {
       $(".full-page").css("height", 900);*/
     }
   }
-  
+
   //center();
   $("ul li").click(function(event) {
     $("ul li.active").removeClass("active");

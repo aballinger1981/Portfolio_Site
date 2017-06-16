@@ -43,7 +43,7 @@ li.inactive a:hover {
 }
 
 #Portfolio {
-  background: linear-gradient(to bottom, rgba(242, 242, 242,0.2),rgba(230, 230, 230,0.4)), url("https://c2.staticflickr.com/9/8461/29795041265_f98fe2dd38_o.jpg");
+  background: linear-gradient(to bottom, rgba(242, 242, 242,0.5),rgba(230, 230, 230,0.5)), url("https://c2.staticflickr.com/9/8461/29795041265_f98fe2dd38_o.jpg");
   background-attachment: fixed;
   background-size: cover;
 }
@@ -87,7 +87,7 @@ li.inactive a:hover {
   font-family: "Cardo", serif;
 }
 
-.project-image:hover img, .project-image:hover .caption {
+.project-image:hover img {
   cursor: pointer;
   opacity: .25;
   transition: opacity 0.2s ease-in-out;
@@ -97,8 +97,9 @@ li.inactive a:hover {
   top: 20%;
   opacity: 1;
   color: #ffffff;
-  background: #AF6204;
+  background: #e17e05;
   border: 3px solid #ffffff;
+  cursor: pointer;
 }
 
 .project-image:after {
@@ -121,7 +122,11 @@ li.inactive a:hover {
   right: 0;
   border-radius: 50%;
   background: transparent;
-  border: 3px solid transparent;
+  border: 5px solid transparent;
+}
+
+.project-image .caption:hover {
+  cursor: pointer;
 }
 
 .stay-connected {
