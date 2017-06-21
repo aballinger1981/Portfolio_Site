@@ -2,7 +2,7 @@ $(document).ready(function () {
 
   resizeSection();
 
-  window.onresize = function (event) {
+  window.onresize = function() {
     resizeSection();
   }
 
@@ -17,7 +17,7 @@ $(document).ready(function () {
     }
   }
 
-  $("ul li").click(function (event) {
+  $("ul li").click(function() {
     $("ul li.active").removeClass("active");
     $("ul li").addClass("inactive");
     var $this = $(this);
@@ -28,13 +28,13 @@ $(document).ready(function () {
     event.preventDefault();
   });
 
-  $('.scroll-link').on('click', function (event) {
+  $('.scroll-link').on('click', function() {
     event.preventDefault();
     var sectionID = $(this).attr("data-id");
     scrollToID('#' + sectionID, 750);
   });
 
-  $('#nav-toggle').on('click', function (event) {
+  $('#nav-toggle').on('click', function() {
     event.preventDefault();
     $('#main-nav').toggleClass("open");
   });
