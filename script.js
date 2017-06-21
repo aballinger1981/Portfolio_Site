@@ -1,5 +1,12 @@
 $(document).ready(function () {
-  $(document).on("scroll", onScroll);
+  var enableScroll = true;
+
+  $(document).on("scroll", function () {
+    if (enableScroll === true) {
+      onScroll();
+    }
+  });
+
   resizeSection();
 
   window.onresize = function () {
@@ -17,11 +24,10 @@ $(document).ready(function () {
     }
   }
 
-  function onScroll(event) {
+  function onScroll() {
     var scrollPosition = $(document).scrollTop();
     $('nav a').each(function (index) {
       var currentLink = $(this);
-      console.log(currentLink);
       var refElement = "#" + currentLink.attr("data-id");
       if ($(refElement).position().top <= scrollPosition + 100) {
         $('nav li').removeClass("active");
@@ -34,6 +40,8 @@ $(document).ready(function () {
   }
 
   $("ul li").click(function () {
+    enableScroll = false;
+    console.log(enableScroll);
     $("ul li.active").removeClass("active");
     $("ul li").addClass("inactive");
     var $this = $(this);
@@ -67,5 +75,6 @@ $(document).ready(function () {
       mainNav.css("height", "1px").removeClass("in").addClass("collapse");
       mainNav.removeClass("open");
     }
+    setTimeout(() => enableScroll = true, 800);
   }
 });
