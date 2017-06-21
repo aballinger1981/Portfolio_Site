@@ -74,6 +74,10 @@ li.inactive a:hover {
   margin-top: 0px;
 }
 
+#Portfolio, #Contact {
+  padding-bottom: 50px;
+}
+
 #Portfolio p {
   color: #47494c;
 }
@@ -158,14 +162,17 @@ label {
   padding-top: 50px;
 }
 
-section {
-    padding-bottom: 50px;
-}
-
 @media (min-width: 1200px) {
   .profile-text {
     padding-left: 300px;
     padding-right: 300px;
+  }
+}
+
+@media (min-width: 501px) and (max-width: 1199px) {
+  .profile-text {
+    padding-left: 50px;
+    padding-right: 50px;
   }
 }
 
@@ -213,14 +220,10 @@ section {
     font-weight: 400;
   }
 
-  .about {
-    padding-top: 25px;
-  }
-
   .profile-text {
     padding-left: 15px;
     padding-right: 15px;
-    font-size: 1.1em;
+    font-size: 1.2em;
     font-weight: 600;
   }
 

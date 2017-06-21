@@ -8,9 +8,9 @@ $(document).ready(function () {
 
   function resizeSection() {
     var vpw = $(window).width();
-    var vph = $(window).innerHeight();
+    var vph = $(window).innerHeight() - 100;
 
-    if (vph > 900 && vpw > 499) {
+    if (vpw > 499) {
       $(".full-page").css("height", vph);
     } else {
       $(".full-page").removeProp("height");
