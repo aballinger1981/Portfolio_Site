@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=Advent+Pro|Montserrat|Cardo|Open+Sans");
 
+.alertify-notifier {
+  color: white;
+  text-align: center;
+}
+
 body {
   padding-top: 100px;
 }
@@ -70,7 +75,7 @@ li.inactive a:hover {
 }
 
 #Contact {
-  padding-bottom: 200px;
+  padding-bottom: 175px;
 }
 
 #Portfolio p {

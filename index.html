@@ -11,6 +11,7 @@
     href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
   <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/alertifyjs/1.10.0/css/alertify.min.css"/>
   <link rel="stylesheet"
     href="style.css">
 </head>
@@ -35,6 +36,13 @@
 
         <div class="collapse navbar-collapse"
           id="main-nav">
+          <ul class="nav navbar-nav">
+            <li class="inactive">
+              <a href="#"
+                class="nav-text scroll-link"
+                data-id="About">Home</a>
+            </li>
+          </ul>
           <ul class="nav navbar-nav navbar-right">
             <li class="inactive">
               <a href="#"
@@ -179,31 +187,35 @@
             <div class="form-group">
               <label for="name">Name:</label>
               <input class="form-control"
+                id="inputName"
                 name="name"
                 type="text"
-                size="50"
-                required />
+                size="50" />
             </div>
             <div class="form-group">
               <label for="email">Email:</label>
               <input class="form-control"
-                name="email"
+                id="inputEmail"
+                name="_replyto"
                 type="email"
-                size="50"
-                required />
+                size="50" />
             </div>
             <div class="form-group">
               <label for="message">Message:</label>
               <textarea class="form-control"
+                id="inputMessage"
                 name="message"
                 rows="10"
                 type="text"
-                size="100"
-                required></textarea>
+                size="100"></textarea>
+            </div>
+            <div class="form-group">
+              <input type="text" name="_gotcha" style="display:none" />
+            </div>
+            <div class="form-group">
+              <input class="submit btn-primary btn-lg" name="submit" type="submit" value="Submit" />
             </div>
           </form>
-          <button type="button"
-              class="btn btn-lg btn-primary">Submit</button>
         </div>
       </div>
     </div>
@@ -215,7 +227,7 @@
     src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
   <script type="text/javascript"
     src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
+  <script src="https://cdn.jsdelivr.net/alertifyjs/1.10.0/alertify.min.js"></script>
   <script type="text/javascript"
     src="./script.js"></script>
 
