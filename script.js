@@ -26,7 +26,7 @@ $(document).ready(function () {
 
   function onScroll() {
     var scrollPosition = $(document).scrollTop();
-    $('nav a').each(function (index) {
+    $('.navbar-right a').each(function (index) {
       var currentLink = $(this);
       var refElement = '#' + currentLink.attr('data-id');
       if ($(refElement).position().top <= scrollPosition + 100) {

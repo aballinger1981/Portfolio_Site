@@ -10,13 +10,42 @@ body {
 }
 
 .navbar-default {
-  background-image: url("https://c2.staticflickr.com/9/8461/29795041265_f98fe2dd38_o.jpg");
-  background-attachment: fixed;
-  background-size: cover;
-  border-bottom: 1px solid white;
-  padding-top: 50px;
+  background-color: #728596;
   font-size: 1.5em;
-  margin: 0px;
+  height: 100px;
+}
+
+.nav-img {
+  width: 100px;
+}
+
+.nav-img a, .nav-img-text {
+  background: none !important;
+}
+
+.nav img {
+  width: 100%;
+  border: 4px solid white;
+}
+
+.nav-img-text {
+  padding-left: 0px !important;
+  margin-top: 12.5px;
+}
+
+.nav-img-text div {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-img-text span:first-of-type {
+  font-size: 1em;
+  color: white !important;
+}
+
+.nav-img-text span:last-of-type {
+  font-size: .5em;
+  color: white !important;
 }
 
 .nav-text {
@@ -25,13 +54,24 @@ body {
   font-size: 1.25em;
 }
 
-li.active a {
-  color: #47494c !important;
+.navbar-right li {
+  margin-top: 25px;
 }
 
-li.inactive a:hover {
-  background-color: #dbdde0 !important;
-  color: grey !important;
+.navbar-right li:nth-child(2) {
+  margin-left: 7px;
+  margin-right: 7px;
+}
+
+.navbar-right li.active a {
+  color: #728596 !important;
+  border-radius: 5px;
+}
+
+.navbar-right li.inactive a:hover {
+  background-color: none !important;
+  color: #e17e05 !important;
+  border-radius: 5px;
 }
 
 .center {
@@ -78,7 +118,7 @@ li.inactive a:hover {
   padding-bottom: 175px;
 }
 
-#Portfolio p {
+#Portfolio p span {
   color: #47494c;
 }
 
