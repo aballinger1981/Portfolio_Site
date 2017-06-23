@@ -7,11 +7,11 @@ $(document).ready(function () {
     }
   });
 
-  resizeSection();
+  // resizeSection();
 
-  window.onresize = function () {
-    resizeSection();
-  }
+  // window.onresize = function () {
+  //   resizeSection();
+  // }
 
   function resizeSection() {
     var vpw = $(window).width();

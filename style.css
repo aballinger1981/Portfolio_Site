@@ -10,9 +10,10 @@ body {
 }
 
 .navbar-default {
-  background-color: #728596;
+  background: linear-gradient(to right, #D6D3B2, #C7CAB1);
   font-size: 1.5em;
   height: 100px;
+  border: none;
 }
 
 .nav-img {
@@ -70,7 +71,7 @@ body {
 
 .navbar-right li.inactive a:hover {
   background-color: none !important;
-  color: #e17e05 !important;
+  color: #728596 !important;
   border-radius: 5px;
 }
 
@@ -82,21 +83,16 @@ body {
   flex-direction: column;
 }
 
-.about {
+#About {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-}
-
-#About, #Contact {
-  background-image: url("https://c2.staticflickr.com/9/8461/29795041265_f98fe2dd38_o.jpg");
-  background-attachment: fixed;
-  background-size: cover;
+  background-image: url("images/about background.jpg");
+  background-size: 100% 100%;
 }
 
 #Portfolio {
-  background: linear-gradient(to bottom, rgba(242, 242, 242,0.7),rgba(230, 230, 230,0.7)), url("https://c2.staticflickr.com/9/8461/29795041265_f98fe2dd38_o.jpg");
-  background-attachment: fixed;
+  background-color: white;
   background-size: cover;
   padding-bottom: 50px;
 }
@@ -104,7 +100,8 @@ body {
 #About h1 {
   font-family: "Montserrat", sans-serif;
   color: white;
-  padding: 7px 0px;
+  padding-bottom: 7px;
+  padding-top: 100px;
 }
 
 #About h3 {
@@ -116,31 +113,39 @@ body {
 
 #Contact {
   padding-bottom: 175px;
+  background-color: #D6D3B2;
+  color: #728596;
+}
+
+#Contact p {
+  color: white;
 }
 
 #Portfolio p span {
-  color: #47494c;
+  color: #728596;
 }
 
 .section-header {
-  font-family: "Montserrat", serif;
+  font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
-  color: white;
   padding-top: 50px;
   font-weight: 800;
 }
 
 .profile-text {
   color: white;
-  padding-bottom: 50px;
-}
-
-.profile-image {
-  padding-top: 50px;
+  padding-top: 25px;
+  padding-bottom: 250px;
+  font-size: 1.5em;
+  font-weight: 500;
 }
 
 .portfolio {
   padding-top: 50px;
+}
+
+.project-image {
+  border: 1px solid #728596;
 }
 
 .project-image:hover img {
@@ -153,7 +158,7 @@ body {
   top: 20%;
   opacity: 1;
   color: #ffffff;
-  background: #e17e05;
+  background: #728596;
   border: 3px solid #ffffff;
   cursor: pointer;
 }
@@ -207,18 +212,11 @@ label {
   padding-top: 75px;
 }
 
-@media (min-width: 1200px) {
-  .profile-text {
-    padding-left: 400px;
-    padding-right: 400px;
-  }
-}
-
-@media (min-width: 501px) and (max-width: 1199px) {
-  .profile-text {
-    padding-left: 50px;
-    padding-right: 50px;
-  }
+.submit, .submit:active:focus {
+  background-color: #728596 !important;
+  outline: none !important;
+  border: none !important;
+  box-shadow: none !important;
 }
 
 @media (min-width: 500px) {
@@ -230,12 +228,6 @@ label {
   #About h3 {
     font-size: 1.2em;
     font-weight: 400;
-  }
-
-  .profile-text {
-    padding-top: 25px;
-    font-size: 1.75em;
-    font-weight: 600;
   }
 
   .section-header {
@@ -263,13 +255,6 @@ label {
   #About h3 {
     font-size: 1em;
     font-weight: 400;
-  }
-
-  .profile-text {
-    padding-left: 15px;
-    padding-right: 15px;
-    font-size: 1.2em;
-    font-weight: 600;
   }
 
   .fcc, .social-icon {
