@@ -26,23 +26,26 @@ $(document).ready(function () {
 
   function onScroll() {
     var scrollPosition = $(document).scrollTop();
-    $('.navbar-right a').each(function (index) {
+    $('.navbar-right a').each(function () {
       var currentLink = $(this);
       var refElement = '#' + currentLink.attr('data-id');
-      if ($(refElement).position().top <= scrollPosition + 100) {
+      if ($(refElement).position().top <= scrollPosition + 100
+        && $(refElement).position().top + $(refElement).height() > scrollPosition + 100) {
         $('nav li').removeClass('active');
+        currentLink.parent().removeClass('inactive');
         currentLink.parent().addClass('active');
       }
       else {
         currentLink.parent().removeClass('active');
+        currentLink.parent().addClass('inactive');
       }
     });
   }
 
-  $('ul li').click(function () {
+  $('.navbar-right li').click(function () {
     enableScroll = false;
-    $('ul li.active').removeClass('active');
-    $('ul li').addClass('inactive');
+    $('.navbar-right li.active').removeClass('active');
+    $('.navbar-right li').addClass('inactive');
     var $this = $(this);
     if (!$this.hasClass('active')) {
       $this.removeClass('inactive');
