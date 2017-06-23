@@ -75,14 +75,6 @@ body {
   border-radius: 5px;
 }
 
-.center {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
 #About {
   display: flex;
   justify-content: center;
@@ -94,7 +86,7 @@ body {
 #Portfolio {
   background-color: white;
   background-size: cover;
-  padding-bottom: 50px;
+  padding-bottom: 100px;
 }
 
 #About h1 {
@@ -121,8 +113,10 @@ body {
   color: white;
 }
 
-#Portfolio p span {
-  color: #728596;
+#Portfolio p {
+  color: #303234;
+  padding-bottom: 50px;
+  margin-bottom: 0px;
 }
 
 .section-header {
@@ -144,50 +138,45 @@ body {
   padding-top: 50px;
 }
 
-.project-image {
-  border: 1px solid #728596;
+.portfolio div {
+  padding: 0;
 }
 
-.project-image:hover img {
+.portfolio p {
+  margin-bottom: 0;
+}
+
+.projects .first-row div, .projects .second-row div {
+  width: 25%;
+  height: 300px;
+}
+
+.first-row, .second-row {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.first-row div:nth-child(odd) {
+  background-color: #D6D3B2;
+}
+
+.first-row div:nth-child(even) {
+  background-color: #728596;
+}
+
+.second-row div:nth-child(even) {
+  background-color: #D6D3B2;
+}
+
+.second-row div:nth-child(odd) {
+  background-color: #728596;
+}
+
+.first-row div:hover, .second-row div:hover {
   cursor: pointer;
   opacity: .25;
   transition: opacity 0.2s ease-in-out;
-}
-
-.project-image:hover:after {
-  top: 20%;
-  opacity: 1;
-  color: #ffffff;
-  background: #728596;
-  border: 3px solid #ffffff;
-  cursor: pointer;
-}
-
-.project-image:after {
-  font-family: "FontAwesome";
-  content: "\f121";
-  color: #fff;
-  font-size: 48px;
-  line-height: 80px;
-  top: 70%;
-  position: absolute;
-  text-align: center;
-  display: inline-block;
-  transition: all .35s;
-  opacity: 0;
-  width: 86px;
-  height: 86px;
-  margin-left: auto;
-  margin-right: auto;
-  left: 0;
-  right: 0;
-  border-radius: 50%;
-  background: transparent;
-  border: 5px solid transparent;
-}
-
-.project-image .caption:hover {
-  cursor: pointer;
 }
 
 .contact {
@@ -234,8 +223,8 @@ label {
     font-size: 2.5em;
   }
   .fcc, .social-icon {
-    width: 10%;
-    height: 10%;
+    width: 5%;
+    height: 5%;
   }
   .stay-connected {
     font-size: 1.75em;
