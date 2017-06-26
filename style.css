@@ -9,6 +9,10 @@ body {
   padding-top: 100px;
 }
 
+.navbar-collapse {
+  background: linear-gradient(to right, #D6D3B2, #C7CAB1);
+}
+
 .navbar-default {
   background: linear-gradient(to right, #D6D3B2, #C7CAB1);
   font-size: 1.5em;
@@ -59,11 +63,6 @@ body {
   margin-top: 25px;
 }
 
-.navbar-right li:nth-child(2) {
-  margin-left: 7px;
-  margin-right: 7px;
-}
-
 .navbar-right li.active a {
   color: #728596 !important;
   border-radius: 5px;
@@ -104,7 +103,7 @@ body {
 }
 
 #Contact {
-  padding-bottom: 175px;
+  padding-bottom: 50px;
   background-color: #D6D3B2;
   color: #728596;
 }
@@ -117,6 +116,22 @@ body {
   color: #303234;
   padding-bottom: 50px;
   margin-bottom: 0px;
+}
+
+#Portfolio .container {
+  padding: 0px;
+}
+
+#Footer {
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  background-color: #728596;
+  text-align: center;
+  padding: 50px 0px;
+}
+
+#Footer p {
+  margin: 0px;
 }
 
 .section-header {
@@ -134,49 +149,60 @@ body {
   font-weight: 500;
 }
 
-.portfolio {
-  padding-top: 50px;
+.center-block {
+  float: none;
 }
 
-.portfolio div {
-  padding: 0;
+.portfolio {
+  padding-top: 50px;
 }
 
 .portfolio p {
   margin-bottom: 0;
 }
 
-.projects .first-row div, .projects .second-row div {
-  width: 25%;
-  height: 300px;
-}
-
-.first-row, .second-row {
+.projects {
   display: flex;
   flex-direction: row;
-  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-right: 200px;
+  padding-left: 200px;
 }
 
-.first-row div:nth-child(odd) {
-  background-color: #D6D3B2;
+.projects div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+  width: 200px;
+  height: 200px;
 }
 
-.first-row div:nth-child(even) {
-  background-color: #728596;
+.projects div:nth-child(odd) {
+  border: 2px solid #303234;
 }
 
-.second-row div:nth-child(even) {
-  background-color: #D6D3B2;
+.projects div:nth-child(even) {
+  border: 2px solid #303234;
 }
 
-.second-row div:nth-child(odd) {
-  background-color: #728596;
-}
-
-.first-row div:hover, .second-row div:hover {
+.projects div:hover {
   cursor: pointer;
   opacity: .25;
   transition: opacity 0.2s ease-in-out;
+}
+
+.projects img {
+  width: 100%;
+  height: 100%;
+  border: 1px solid black;
+}
+
+.quote-machine img{
+  height: 80%;
+  border-right: none;
+  border-left: none;
 }
 
 .contact {
@@ -206,6 +232,24 @@ label {
   outline: none !important;
   border: none !important;
   box-shadow: none !important;
+}
+
+@media (max-width: 1000px) {
+  .no-mobile {
+    display: none;
+  }
+
+  .projects {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+}
+
+@media (min-width: 767px) {
+  .navbar-right li:nth-child(2) {
+    margin-left: 7px;
+    margin-right: 7px;
+  }
 }
 
 @media (min-width: 500px) {
@@ -244,6 +288,11 @@ label {
   #About h3 {
     font-size: 1em;
     font-weight: 400;
+  }
+
+  .projects div {
+    width: 200px;
+    height: 200px;
   }
 
   .fcc, .social-icon {
