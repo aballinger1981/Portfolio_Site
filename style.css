@@ -172,25 +172,48 @@ body {
 
 .projects div {
   display: flex;
+  position: relative;
   align-items: center;
   justify-content: center;
   margin: 20px;
-  width: 200px;
-  height: 200px;
-}
-
-.projects div:nth-child(odd) {
+  width: 300px;
+  height: 300px;
   border: 2px solid #303234;
-}
-
-.projects div:nth-child(even) {
-  border: 2px solid #303234;
+  overflow: hidden;
 }
 
 .projects div:hover {
   cursor: pointer;
-  opacity: .25;
-  transition: opacity 0.2s ease-in-out;
+  /*background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('images/Chalkulator.jpg');*/
+  transition: 0.2s ease-in-out;
+}
+
+.projects div:hover img {
+  transform: scale(1.2,1.2);
+  transition: 0.3s ease-out;
+  opacity: .9;
+  z-index: 0;
+}
+
+.projects div:hover span {
+  visibility: visible;
+  z-index: 1;
+}
+
+.project-title {
+  background: rgba(255, 255, 255, .8);
+  font-family: "Montserrat", sans-serif;
+  position: absolute;
+  display: block;
+  width: 100%;
+  text-align: center;
+  top: 123px;
+  padding: 15px;
+  color: rgba(0, 0, 0, 1);
+  visibility: hidden;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.25em;
 }
 
 .projects img {
@@ -203,6 +226,23 @@ body {
   height: 80%;
   border-right: none;
   border-left: none;
+}
+
+.local-weather img {
+  width: 100%;
+  height: 55%;
+  border-right: none;
+  border-left: none;
+}
+
+.wikipedia-viewer img {
+  height: 80%;
+  border: none;
+}
+
+.calculator img {
+  height: 80%;
+  border: none;
 }
 
 .contact {
@@ -238,7 +278,16 @@ label {
   .no-mobile {
     display: none;
   }
+}
 
+@media (max-width: 1450px) and (min-width: 1101px) {
+  .projects {
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+}
+
+@media (max-width: 1100px) {
   .projects {
     padding-right: 10px;
     padding-left: 10px;
@@ -293,6 +342,10 @@ label {
   .projects div {
     width: 200px;
     height: 200px;
+  }
+
+  .project-title {
+    top: 73px;
   }
 
   .fcc, .social-icon {
