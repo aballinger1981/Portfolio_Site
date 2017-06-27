@@ -220,34 +220,33 @@ body {
 .projects img {
   width: 100%;
   height: 100%;
-  border: 1px solid black;
 }
 
 .quote-machine img{
-  height: 75%;
-  border: none;
+  height: 125%;
+  width: 250%;
+  margin-top: 50px;
 }
 
 .twitch img {
-  border: none;
-  width: 100%;
-  height: 90%;
+  width: 150%;
+  height: 100%;
 }
 
 .local-weather img {
-  width: 100%;
-  height: 55%;
-  border: none;
+  width: 170%;
+  height: 125%;
+  margin-left: 35px;
+  margin-top: 90px;
 }
 
 .wikipedia-viewer img {
   height: 80%;
-  border: none;
 }
 
 .calculator img {
   height: 80%;
-  border: none;
+  width: 120%;
 }
 
 .contact {
