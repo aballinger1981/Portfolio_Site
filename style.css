@@ -250,6 +250,11 @@ body {
   width: 120%;
 }
 
+.pomodoro img {
+  width: 175%;
+  height: 90%;
+}
+
 .contact {
   padding-left: 15px;
   padding-right: 15px;
