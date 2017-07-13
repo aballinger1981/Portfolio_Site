@@ -255,6 +255,11 @@ body {
   height: 90%;
 }
 
+.tic-tac-toe img {
+  width: 150%;
+  height: 90%;
+}
+
 .contact {
   padding-left: 15px;
   padding-right: 15px;
