@@ -120,10 +120,6 @@ body {
   margin-bottom: 0px;
 }
 
-#Portfolio .container {
-  padding: 0px;
-}
-
 #Footer {
   font-family: "Montserrat", sans-serif;
   color: white;
@@ -153,14 +149,6 @@ body {
 
 .center-block {
   float: none;
-}
-
-.portfolio {
-  padding-top: 50px;
-}
-
-.portfolio p {
-  margin-bottom: 0;
 }
 
 .projects {
