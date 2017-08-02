@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Advent+Pro|Montserrat|Cardo|Open+Sans");
+@import url("https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Raleway");
 
 .alertify-notifier {
   color: white;
@@ -34,6 +34,7 @@ body {
 }
 
 .nav-img-text {
+  font-family: 'Open Sans', sans-serif;
   padding-left: 0px !important;
   margin-top: 12.5px;
 }
@@ -54,9 +55,10 @@ body {
 }
 
 .nav-text {
+  font-family: "Montserrat", sans-serif;
   color: white !important;
   font-weight: 600;
-  font-size: 1.25em;
+  font-size: 1.1em;
 }
 
 .navbar-right li {
@@ -96,7 +98,7 @@ body {
 }
 
 #About h3 {
-  font-family: "Montserrat", serif;
+  font-family: 'Open Sans', sans-serif;
   color: white;
   text-transform: uppercase;
   margin-top: 0px;
@@ -113,7 +115,7 @@ body {
 }
 
 #Portfolio p {
-  color: #303234;
+  color: black;
   padding-bottom: 50px;
   margin-bottom: 0px;
 }
@@ -135,10 +137,10 @@ body {
 }
 
 .section-header {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Raleway', sans-serif;
   text-transform: uppercase;
   padding-top: 50px;
-  font-weight: 800;
+  font-weight: bold;
 }
 
 .profile-text {
@@ -336,7 +338,7 @@ label {
   }
 
   .section-header {
-    font-size: 2.5em;
+    font-size: 2em;
   }
   .fcc, .social-icon {
     width: 5%;
