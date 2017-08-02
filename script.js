@@ -7,12 +7,6 @@ $(document).ready(function () {
     }
   });
 
-  // resizeSection();
-
-  // window.onresize = function () {
-  //   resizeSection();
-  // }
-
   function resizeSection() {
     var vpw = $(window).width();
     var vph = $(window).innerHeight();

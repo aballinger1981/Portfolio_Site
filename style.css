@@ -260,6 +260,11 @@ body {
   height: 90%;
 }
 
+.simon img {
+  width: 155%;
+  height: 90%;
+}
+
 .contact {
   padding-left: 15px;
   padding-right: 15px;
